@@ -71,7 +71,11 @@
 <body>
 <div class="main">
     
-
+    <header>
+        <nav>
+            <center><a href="index.html"><font size="7" color="white">Inicio</font></a></center>
+        </nav>
+    </header>
         
     <table class="default">
         <tr>
@@ -111,6 +115,41 @@
 </div>
 
 
+    <script>
+        var horas, pago, extra, extra2, total;
+
+        horas = prompt("Ingresa la cantidad de horas totales trabajadas ");
+        pago = prompt("Ingresa el pago por hora habitual ");
+
+
+        if(horas<0){
+            document.write("<center>");
+            document.write("Eliga un valor positivo");
+        }else{
+            if(horas>40){
+                extra = parseInt(horas)-40;
+                
+                if(extra>8){
+                    extra2 = parseInt(horas)-48;
+
+                    total = (parseInt(pago)*40)+(parseInt(pago)*16)+(parseInt(pago)*3)*parseInt(extra2);
+
+                    document.write("<center>");
+                    document.write("La cantidad de dinero total es de $"+total);
+                }else{
+                    total = (parseInt(extra)*2) * (parseInt(pago)) + (parseInt(pago)*40);
+
+                    document.write("<center>");
+                    document.write("La cantidad de dinero total es de $"+total);
+                }
+            }else{
+                total = (parseInt(horas))*(parseInt(pago));
+
+                document.write("<center>");
+                document.write("La cantidad de dinero total es de $"+total);
+            }
+        }
+    </script>
      
 </body>
 </html>

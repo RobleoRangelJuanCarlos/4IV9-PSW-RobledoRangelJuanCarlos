@@ -71,7 +71,11 @@
 <body>
 <div class="main">
     
-
+    <header>
+        <nav>
+            <center><a href="index.html"><font size="7" color="white">Inicio</font></a></center>
+        </nav>
+    </header>
         
     <table class="default">
         <tr>
@@ -110,6 +114,45 @@
 <div>
 </div>
 
+    <script>
+        var salario, tiempo, utilidad;
+
+        salario = prompt("Ingresa tu salario ");
+        tiempo = prompt("Ingresa el tiempo que has estado dentro de la empresa ");
+
+        if(salario>0 && tiempo>0){  
+            if(tiempo<1){
+                utilidad = parseInt(salario)*0.05;  
+                document.write("<center>");
+                document.write("La utilidad por "+tiempo+" años es de $"+utilidad);     
+            }else{
+                if(tiempo>=1 && tiempo<2){
+                    utilidad = parseInt(salario)*0.07;
+                    document.write("<center>");
+                    document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                }else{
+                    if(tiempo>=2 && tiempo<5){
+                        utilidad = parseInt(salario)*0.10;
+                        document.write("<center>");
+                        document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                    }else{
+                        if(tiempo>=5 && tiempo<10){
+                            utilidad = parseInt(salario)*0.15;
+                            document.write("<center>");
+                            document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                        }else{
+                            utilidad = parseInt(salario)*0.20;
+                            document.write("<center>");
+                            document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                        }
+                    }
+                }
+            }
+        }else{
+            document.write("<center>");
+            document.write("Ingrese valores positivos");
+        }
+    </script>
 
      
 </body>
