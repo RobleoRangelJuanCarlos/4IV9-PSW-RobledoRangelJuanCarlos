@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #fff;
+    font-size: 15px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-image: url(../img/bg3.jpg);   
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.bg{
+    background-image: url(../img/bg5.jpg);   
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.titulo h1{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.menu_boton_bars{
+    margin: 10px;
+    
+}
+
+.label_menu{
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.label_menu #span_1, #span_2, #span_3{
+    position: absolute;
+    background: #fff;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+    top: 20px;
+    
+}
+
+#span_2{
+    top: 30px;
+}
+
+#span_3{
+    top: 40px;
+}
+
+#hamburguesa{
+    display: none;
+}
+
+#hamburguesa:checked ~ .label_menu #span_1{
+    transform: rotate(140deg);
+    top: 30px;
+}
+
+#hamburguesa:checked ~ .label_menu #span_2{
+    opacity: 0;
+}
+
+#hamburguesa:checked ~ .label_menu #span_3{
+    transform: rotate(-140deg);
+    top: 30px;
+}
+
+.cabeza-bottom{    
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #000;
+    width: 96.764%;
+    height: auto;
+    padding: 30px;
+    text-align: center;       
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.mostrar{    
+    color: #fff;
+    position: absolute;
+    transform: translateX(-150rem);
+    transition: transform 0s ease-in-out;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu div a{  
+    text-decoration: none;
+    color: #fff;
+    margin-left: -7rem;
+}
+.boton-n{       
+    border-bottom: 2px solid #fff; 
+    padding: 7px;
+    cursor: default; 
+}
+
+.btn-n:hover{
+    border-bottom: 2px solid #fff; 
+    padding: 7px;
+}
+.contenedor-cabeza{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: black;
+    color: #fff;
+    
+}
+
+.cabeza-top{
+    margin: 1rem;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-cabeza{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: black;
+    color: #fff;
+    
+}
+
+.cabeza-top{
+    margin: 1rem;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img{
+    width: 65px;
+}
+
+.imagen{    
+    flex: 1;
+}
+
+.titulo{    
+    flex: 10;
+}
+
+.barras{
+    flex: 1;
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    margin-top: 2rem;
+    margin-left: 11rem;
+    margin-right: 4rem;
+    
+}
+
+.btn-buscar{
+    margin-top: 2rem;
+    margin-left: 11rem;
+    margin-left: 4rem;
+       
+}
+
+.contenedor-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+
+    margin: 3rem auto;
+
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px; 
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.formulario-contenido{
+    display: flex;
+    width: 80rem;
+    justify-content: space-evenly;
+}
+
+.perfil-img{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 150px;
+}
+
+.imgperf{
+    margin-right: -7rem;
+    width: 150px;
+    border: 1px solid #fff;
+}
+
+.formulario-n{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    display: flex;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-between;
+    width: auto; 
+}
+
+.productos p{
+    margin-top: 30px;
+}
+
+.productos-btn{
+    margin-left: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.formulario-n div {
+    margin-top: 1rem;
+    margin-right: 6rem;
+    text-align: center;
+}
+
+.contenido{
+    margin: 1rem;
+    text-align: center;
+}
+
+.contenedor-pie{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: black;
+    color: #fff;
+}
+
+.pie-top{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.boton{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.boton a{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;  
+    cursor: pointer;
+    text-decoration: none;
+} 
+
+.boton a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;  
+    cursor: pointer;
+}
+
+.formulario-bottom p, .formulario-top p{
+    margin-top: 25px;
+
+}
+
+
+.inputs:hover{
+    cursor: pointer;
+}
+
+input{
+    width: auto;
+    margin: 1rem;
+    margin-right: -10rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    cursor: text;
+    
+
+}
+
+
+input:hover{
+    margin: 1rem;
+    margin-right: -10rem;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    cursor: text;
+    outline: none;
+    cursor: text;
+    
+
+}
+
+.boton-registro{
+    margin: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    
+
+}
+
+
+.boton-registro:hover{
+    margin: 1rem;
+    background: linear-gradient(to bottom, transparent,rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));;
+    border-bottom: transparent;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+input:hover::placeholder{
+    color: rgba(255, 255, 255, 0.99); 
+}
+

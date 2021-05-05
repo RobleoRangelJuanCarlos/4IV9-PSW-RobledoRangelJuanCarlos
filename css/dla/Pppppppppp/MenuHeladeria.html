@@ -1,0 +1,79 @@
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Carrito</title>
+        <link rel="icon" href= "images/icon.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300&display=swap" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <link rel = "stylesheet" type = 'text/css' href = 'Styles/Estilos.css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9fb0a1aa63.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <header>
+            <div class = "container logo-nav-container">
+    
+                <span class="menu-icon"> <i class="fas fa-chevron-down"></i></span>
+                <nav class = "navigation">
+                    <ul>
+                        <li onclick = "javascript:Carrito()"><i></i>CARRITO</li>
+                        <li onclick="javascript:Inicio()"><i></i>CERRAR SESION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section>
+            <main>
+
+
+
+
+
+
+
+                <div class="producto">
+                                    
+                    <image src = "images/heladozzz.jpg" class="helados"></image>
+                    <div class="precios">
+                        <form name="formularioCompra" onsubmit="return validarCompra(this)">
+                            <p class="izquierda">Helado: </p>
+                            <p class="izquierda">Precio:  </p>
+                            <p class="izquierda">Mayoreo:  </p>
+                            <p class="em7"></p>
+                            <a href="FormularioCompra.jsp?id=" name="heladoComprar" class="boton">Comprar</a>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+            </main>
+        </section>
+
+        <footer>
+            <h4>Integrantes:</h4>
+            <p>Gervasio Flores Isaac Antonio</p>
+            <p>Robledo Rangel Juan Carlos</p>
+            <p>Romero Tovar Adrian</p>
+        </footer>
+
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/validarFormularios.js"></script>   
+
+    </body>
+</html>

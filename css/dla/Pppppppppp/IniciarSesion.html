@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Iniciar Sesión</title>
+        <link rel="icon" href= "./images/icon.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300&display=swap" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel = "stylesheet" type = 'text/css' href = 'Styles/Estilos.css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9fb0a1aa63.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class = "container logo-nav-container">
+    
+                <span class="menu-icon"> <i class="fas fa-chevron-down"></i></span>
+                <nav class = "navigation">
+                    <ul>
+                        <li onclick="javascript:Inicio();"><i></i>INICIO</li>
+                        <li onclick= "javascript:CrearCuenta()"><i></i> CREAR CUENTA</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <main>
+
+                <form action="InicioSesion" name="formulario" method="POST" onsubmit="return validar(this)" class="formulario">
+
+                    <h4 class="formulario__titulo">
+                        USUARIO
+                    </h4>
+                    <input id="inputXD" onkeypress="return validarAlfaNumericos(event)" type="text" name = "usuario" class="formulario__input" placeholder="Usuario">
+                    <input onkeypress="return validarAlfaNumericos(event)" type="text" name = "contrasena" id="password" class="formulario__input" placeholder="Contraseña">
+                    <div class="botones">
+                        <input type="submit" class="boton" value="INICIAR SESION">
+                        <br>
+                        <br>
+<!--                    <center>
+                        <a class="boton" href="./MenuHeladeria.jsp">VISTA PREVIA</a>            
+                        </center>
+                        -->
+                        <br>
+                        <div class="boton2" onclick="IniciarAdmin()"><div class="espacio"></div>INICIAR COMO ADMINISTRADOR</div>
+                    </div>
+
+                </form>
+
+            </main>
+        </section>
+        <footer>
+            <h4>Integrantes:</h4>
+            <p>Gervasio Flores Isaac Antonio</p>
+            <p>Robledo Rangel Juan Carlos</p>
+            <p>Romero Tovar Adrian</p>
+        </footer>
+
+        <script src="./scripts/validarFormularios.js"></script>
+        <script src="./scripts/script.js"></script>
+
+    </body>
+</html>

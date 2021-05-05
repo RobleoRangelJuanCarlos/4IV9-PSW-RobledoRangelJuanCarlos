@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/4IV9_Examen_pratico_PSW/web/img/logo-negro-sinfondo.png ">
+    <link rel="stylesheet" href="/4IV9_Examen_pratico_PSW/web/CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bad+Script&family=Julius+Sans+One&family=Marck+Script&display=swap" rel="stylesheet">
+    <title>BEN AND JERRY’S</title>
+</head>
+<body>
+    <div class="contenedor-cabeza">
+        <div class="cabeza-top">
+            
+            <div class="imagen">
+                <img class="img" src="/4IV9_Examen_pratico_PSW/web/img/logo-blanco-sinfondo.png" alt="Logotipo">
+            </div>
+            <div class="titulo">
+                <h1>BEN AND JERRY’S</h1>
+            </div>
+            <div class="barras">
+
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-contenido">
+        <div class="contenido">
+            <h3>Inicia Sesión</h3>           
+        </div>
+        <div class="contenido">
+            <form class="formulario" method="get" name="formulario" action="inicio-sesion.html">
+                <div class="formulario-top">
+                    <div>
+                        <p>Usuario:</p>
+                    </div>  
+                    <div>
+                        <input type="text" placeholder="Ingrese su Usuario"  name="usuario"
+                        onkeypress="return validar(event)"class="inputs-1">
+                    </div>                                      
+                </div>
+                <div class="formulario-bottom">
+                    <div>
+                        <p>Contraseña:</p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Ingrese Contraseña"  name="contraseña"
+                        onkeypress="return validar(event)"class="inputs-1">
+                    </div>                    
+                </div>
+                <div class="boton">
+                    <div class="btn">
+                        <input class="boton-registro"  type="button" value="Ingresar" onclick="ingresar()" >
+                    </div>
+                    <!-- <div class="btn">
+                        <input class="boton-registro"  type="button" value="Borrar" onclick="borrar()" >
+                    </div>                                      -->
+                </div>
+            </form>            
+        </div>
+        <div class="contenido boton">
+            <div>
+                <p>No tengo una tengo una cuenta</p>
+            </div>
+            <div>
+                <a href="registrate.html">Registrarse</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-pie">
+        <div class="pie-top">
+            <h4>Guerrero Hernández Hagen</h4><br>
+            <h4>Pérez Aguirre Ian Miztli</h4><br>
+            <h4>Silva Ramírez Usiel Gabriel</h4>
+        </div>
+    </div>    
+    <script src="/4IV9_Examen_pratico_PSW/web/JS/inicia-sesion.js "></script>
+</body>
+</html>

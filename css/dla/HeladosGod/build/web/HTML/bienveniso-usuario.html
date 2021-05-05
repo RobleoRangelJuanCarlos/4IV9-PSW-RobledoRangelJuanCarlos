@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/4IV9_Examen_pratico_PSW/web/img/logo-negro-sinfondo.png ">
+    <link rel="stylesheet" href="/4IV9_Examen_pratico_PSW/web/CSS/bienvenido.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bad+Script&family=Julius+Sans+One&family=Marck+Script&display=swap" rel="stylesheet">
+    <title>BEN AND JERRY’S</title>
+</head>
+<body>
+    <div class="contenedor-cabeza">
+        <div class="cabeza-top">
+            <div class="imagen">
+                <a href="/4IV9_Examen_pratico_PSW/web/HTML/bienveniso-usuario.html"><img  class="img" src="/4IV9_Examen_pratico_PSW/web/img/logo-blanco-sinfondo.png" alt="Logotipo"></a>
+            </div>
+            <div class="titulo">
+                <h1>Usuario</h1>
+            </div> 
+            <div class="barras">
+                <input type="checkbox" id="hamburguesa">
+                <label for="hamburguesa" class=" label_menu menu_boton_bars">
+                    <span id="span_1"></span>
+                    <span id="span_2"></span>
+                    <span id="span_3"></span>  
+                </label>  
+            </div>                                             
+        </div>          
+    </div>
+    <div class="cabeza-bottom mostrar ">
+        <div class="menu">
+            <div>
+                <a class="btn-n" href="promociones-productos.html">Promociones y productos</a>
+            </div>
+            <div>
+                <a class="btn-n" href="carrito-compras.html">Carrito de compras</a>
+            </div>                
+            <div>
+                <a class="btn-n" href="cerrar-sesion-usuario.html">Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-contenido">
+        <form class="formulario" method="send" name="formulario" action="problema3.html">
+            <div class="contenido">
+                <h2>Bienvenido</h2>
+            </div>
+            <div class="contenido">
+                <input  readonly placeholder="" type="text"  class="inputs"  name="nombrecompleto"
+                onkeypress="return validar(event)">
+            </div> 
+        </form>
+    </div>
+    <div class="contenedor-pie">
+        <div class="pie-top">
+            <h4>Guerrero Hernández Hagen</h4><br>
+            <h4>Pérez Aguirre Ian Miztli</h4><br>
+            <h4>Silva Ramírez Usiel Gabriel</h4>
+        </div>
+    </div> 
+    <script src="/4IV9_Examen_pratico_PSW/web/JS/menu.js "></script>
+</body>
+</html>
